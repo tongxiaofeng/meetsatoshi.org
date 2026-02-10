@@ -1,0 +1,31 @@
+baseURL = 'https://meetsatoshi.org/'
+languageCode = 'en-us'
+title = 'Meet Satoshi'
+theme = 'ananke'
+
+[params]
+  description = 'A comprehensive archive of Craig Steven Wright public statements, writings, and appearances.'
+  favicon = ''
+  site_logo = ''
+  text_color = ''
+  author = 'Meet Satoshi Project'
+
+[params.social]
+  github = 'https://github.com/pocketsatoshi/meetsatoshi.org'
+
+[taxonomies]
+  tag = 'tags'
+  category = 'categories'
+  series = 'series'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ['HTML', 'RSS']
+  section = ['HTML', 'RSS']
+
+[pagination]
+  pagerSize = 20
